@@ -8,9 +8,39 @@
 </head>
 
 <body>
+
   <div id="setup-view">
-    <h2>Configura tu Trivia</h2>
     <form id="setup-form">
+      <h2>Configura tu Trivia</h2>
+  
+      <div class="form-group">
+        <label for="category-select">Categoría:</label>
+        <select id="category-select">
+          </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="difficulty-select">Dificultad:</label>
+        <select id="difficulty-select">
+          <option value="easy">Fácil</option>
+          <option value="medium">Media</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="type-select">Tipo de Pregunta:</label>
+        <select id="type-select">
+          <option value="multiple">Opción Múltiple</option>
+          <option value="boolean">Verdadero / Falso</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="amount-input">Número de Preguntas:</label>
+        <input type="number" id="amount-input" value="10" min="1" max="50">
+      </div>
+  
       <button type="submit">Empezar</button>
     </form>
   </div>
