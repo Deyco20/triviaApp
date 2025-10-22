@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <div id="setup-view">
+    <h2>Configura tu Trivia</h2>
+    <form id="setup-form">
+      <button type="submit">Empezar</button>
+    </form>
+  </div>
+
+  <div id="quiz-view" style="display: none;">
+    <h3 id="question-text"></h3>
+    <div id="timer">15</div>
+    <div id="answers-container">
+      </div>
+  </div>
+
+  <div id="results-view" style="display: none;">
+    <h2>Resultados</h2>
+    <p>Tu puntaje: <span id="score"></span></p>
+    <p>Tiempo: <span id="time-taken"></span></p>
+    <h3>Historial de Juegos</h3>
+    <ul id="history-list"></ul>
+    <button id="return-btn">Jugar de Nuevo</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
