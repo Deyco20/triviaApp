@@ -11,37 +11,37 @@
 
   <div id="setup-view">
     <form id="setup-form">
-      <h2>Configura tu Trivia</h2>
+      <h2>Set up your Trivia</h2>
   
       <div class="form-group">
-        <label for="category-select">Categoría:</label>
+        <label for="category-select">Category:</label>
         <select id="category-select">
           </select>
       </div>
   
       <div class="form-group">
-        <label for="difficulty-select">Dificultad:</label>
+        <label for="difficulty-select">Difficulty:</label>
         <select id="difficulty-select">
-          <option value="easy">Fácil</option>
-          <option value="medium">Media</option>
-          <option value="hard">Difícil</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
         </select>
       </div>
   
       <div class="form-group">
-        <label for="type-select">Tipo de Pregunta:</label>
+        <label for="type-select">Question Type:</label>
         <select id="type-select">
-          <option value="multiple">Opción Múltiple</option>
-          <option value="boolean">Verdadero / Falso</option>
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True / False</option>
         </select>
       </div>
   
       <div class="form-group">
-        <label for="amount-input">Número de Preguntas:</label>
+        <label for="amount-input">Number of Questions:</label>
         <input type="number" id="amount-input" value="10" min="1" max="50">
       </div>
   
-      <button type="submit">Empezar</button>
+      <button type="submit">Start</button>
     </form>
   </div>
 
@@ -53,14 +53,14 @@
   </div>
 
   <div id="results-view" style="display: none;">
-    <h2>Resultados</h2>
-    <p>Tu puntaje: <span id="score"></span></p>
-    <p>Tiempo: <span id="time-taken"></span></p>
-    <h3>Historial de Juegos</h3>
+    <h2>Results</h2>
+    <p>Your Score: <span id="score"></span></p>
+    <p>Time Taken: <span id="time-taken"></span></p>
+    <h3>Game History</h3>
     <ul id="history-list"></ul>
-    <button id="return-btn">Jugar de Nuevo</button>
+    <button id="return-btn">Play Again</button>
   </div>
 
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
